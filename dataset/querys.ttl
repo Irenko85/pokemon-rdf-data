@@ -1,0 +1,12 @@
+# Query for the height and weight of the selected Pokemon
+SELECT DISTINCT ?weight ?height ?namelabel
+WHERE {
+  ?name wdt:P8345 wd:Q864;
+  wdt:P2067 ?weight;
+  wdt:P2048 ?height;
+  rdfs:label ?namelabel.
+  VALUES ?namelabel {
+    "Rattata"@en "Raticate"@en "Raichu"@en "Sandshrew"@en "Sandslash"@en "Vulpix"@en "Ninetales"@en 
+    "Diglett"@en "Dugtrio"@en "Meowth"@en "Persian"@en "Geodude"@en "Graveler"@en "Golem"@en 
+    "Grimer"@en "Muk"@en "Exeggutor"@en "Marowak"@en "Hoopa"@en "Lycanroc"@en}
+}
