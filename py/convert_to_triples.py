@@ -9,9 +9,11 @@ file = open('../dataset/pokemon.ttl', 'w', encoding='utf-8')
 PREFIX_RDF = "@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>."
 PREFIX_PKMN = "@prefix pkmn:<http://www.ex.org/#>."
 
+# Reemplazar los nulos por 0 en percentage_male
+dataset['percentage_male'] = dataset['percentage_male'].fillna(0)
+
 # Recorrer el dataset
 text = PREFIX_PKMN + "\n" + PREFIX_RDF + "\n\n"
-i = 0
 for index, row in dataset.iterrows():
     text += f"""
     pkmn:{row['name']} rdf:type pkmn:Pokemon ;
