@@ -34,7 +34,7 @@ for index, row in dataset.iterrows():
         pkmn:hasBaseEggSteps {row['base_egg_steps']} ;
         pkmn:hasBaseHappiness {row['base_happiness']} ;
         pkmn:hasExperienceGrowth {row['experience_growth']} ;
-        pkmn:hasClassfication "{row['classfication']}" ;
+        pkmn:hasClassification "{row['classfication']}" ;
         pkmn:againstBug {row['against_bug']} ;
         pkmn:againstDark {row['against_dark']} ;
         pkmn:againstDragon {row['against_dragon']} ;
