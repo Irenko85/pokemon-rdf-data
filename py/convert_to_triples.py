@@ -52,7 +52,7 @@ for index, row in dataset.iterrows():
         pkmn:againstPsychic {row['against_psychic']} ;
         pkmn:againstRock {row['against_rock']} ;
         pkmn:againstSteel {row['against_steel']} ;
-        pkmn:againstWater {row['against_water']} .
+        pkmn:againstWater {row['against_water']} ;
     """
     
     abilities = row['abilities'].strip('][').split(', ')

@@ -1,0 +1,11 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX pkmn: <http://www.ex.org/#>
+
+SELECT DISTINCT ?pokemonName
+WHERE {
+  ?pokemon rdf:type pkmn:Pokemon ;
+           pkmn:hasName ?pokemonName ;
+           pkmn:hasType1 "normal" .
+  FILTER(LANG(?pokemonName) = "en")
+}
