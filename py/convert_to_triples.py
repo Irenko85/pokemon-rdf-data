@@ -17,7 +17,7 @@ text = PREFIX_PKMN + "\n" + PREFIX_RDF + "\n\n"
 for index, row in dataset.iterrows():
     text += f"""
     pkmn:{row['name']} rdf:type pkmn:Pokemon ;
-        pkmn:hasName "{row['name']}"@en, "{row['japanese_name']}"@jp ;
+        pkmn:hasName '{row['name']}'@en, '{row['japanese_name']}'@jp ;
         pkmn:hasPokedexNumber {row['pokedex_number']} ;
         pkmn:hasType1 "{row['type1']}" ;
         {f'pkmn:hasType2 "{row["type2"]}" ;' if not pd.isna(row['type2']) else ''}
