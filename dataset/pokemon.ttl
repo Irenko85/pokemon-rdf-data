@@ -32972,7 +32972,7 @@
         pkmn:hasAbility 'Electric Surge' , 'Telepathy' ;
         pkmn:isLegendary 1 .
     
-    pkmn:Tapu Lele rdf:type pkmn:Pokemon ;
+    pkmn:TapuLele rdf:type pkmn:Pokemon ;
         pkmn:hasName 'Tapu Lele'@en, 'Kapu-tetefuカプ・テテフ'@jp ;
         pkmn:hasPokedexNumber 786 ;
         pkmn:hasType1 "psychic" ;
@@ -33014,7 +33014,7 @@
         pkmn:hasAbility 'Psychic Surge' , 'Telepathy' ;
         pkmn:isLegendary 1 .
     
-    pkmn:Tapu Bulu rdf:type pkmn:Pokemon ;
+    pkmn:TapuBulu rdf:type pkmn:Pokemon ;
         pkmn:hasName 'Tapu Bulu'@en, 'Kapu-bululカプ・ブルル'@jp ;
         pkmn:hasPokedexNumber 787 ;
         pkmn:hasType1 "grass" ;
@@ -33056,7 +33056,7 @@
         pkmn:hasAbility 'Grassy Surge' , 'Telepathy' ;
         pkmn:isLegendary 1 .
     
-    pkmn:Tapu Fini rdf:type pkmn:Pokemon ;
+    pkmn:TapuFini rdf:type pkmn:Pokemon ;
         pkmn:hasName 'Tapu Fini'@en, 'Kapu-rehireカプ・レヒレ'@jp ;
         pkmn:hasPokedexNumber 788 ;
         pkmn:hasType1 "water" ;
