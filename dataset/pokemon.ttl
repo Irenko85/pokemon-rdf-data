@@ -32484,7 +32484,7 @@
         pkmn:hasHeight 0.3 ;
         pkmn:hasWeight 40.0 ;
         pkmn:hasPercentageMale 0.0 ;
-        pkmn:hasCaptureRate 30 (Meteorite)255 (Core) ;
+        pkmn:hasCaptureRate 30 ;
         pkmn:hasBaseEggSteps 6400 ;
         pkmn:hasBaseHappiness 70 ;
         pkmn:hasExperienceGrowth 1059860 ;
