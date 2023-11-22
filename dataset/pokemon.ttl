@@ -18398,7 +18398,7 @@
         pkmn:hasAbility 'Sturdy' , 'Rock Head' , 'Rattled' ;
         pkmn:isLegendary 0 .
     
-    pkmn:Mime Jr. rdf:type pkmn:Pokemon ;
+    pkmn:MimeJr rdf:type pkmn:Pokemon ;
         pkmn:hasName 'Mime Jr.'@en, 'Maneneマネネ'@jp ;
         pkmn:hasPokedexNumber 439 ;
         pkmn:hasType1 "psychic" ;
