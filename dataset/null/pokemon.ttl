@@ -32384,7 +32384,7 @@
         pkmn:hasAbility 'Innards Out' , 'Unaware' ;
         pkmn:isLegendary 0 .
     
-    pkmn:Type: Null rdf:type pkmn:Pokemon ;
+    pkmn:Type:Null rdf:type pkmn:Pokemon ;
         pkmn:hasName 'Type: Null'@en, 'Type: Nullタイプ：ヌル'@jp ;
         pkmn:hasPokedexNumber 772 ;
         pkmn:hasType1 "normal" ;
