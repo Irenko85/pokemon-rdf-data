@@ -3446,8 +3446,8 @@
         pkmn:hasAbility 'Magnet Pull' , 'Sturdy' , 'Analytic' ;
         pkmn:isLegendary 0 .
     
-    pkmn:Farfetch\\u0027d rdf:type pkmn:Pokemon ;
-        pkmn:hasName 'Farfetch\\u0027d'@en, 'Kamonegiカモネギ'@jp ;
+    pkmn:Farfetchd rdf:type pkmn:Pokemon ;
+        pkmn:hasName 'Farfetchd'@en, 'Kamonegiカモネギ'@jp ;
         pkmn:hasPokedexNumber 83 ;
         pkmn:hasType1 "normal" ;
         pkmn:hasType2 "flying" ;
