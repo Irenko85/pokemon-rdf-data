@@ -5084,7 +5084,7 @@
         pkmn:hasAbility 'Illuminate' , 'Natural Cure' , 'Analytic' ;
         pkmn:isLegendary 0 .
     
-    pkmn:Mr. Mime rdf:type pkmn:Pokemon ;
+    pkmn:MrMime rdf:type pkmn:Pokemon ;
         pkmn:hasName 'Mr. Mime'@en, 'Barrierdバリヤード'@jp ;
         pkmn:hasPokedexNumber 122 ;
         pkmn:hasType1 "psychic" ;
