@@ -32930,7 +32930,7 @@
         pkmn:hasAbility 'Bulletproof' , 'Soundproof' , 'Overcoat' ;
         pkmn:isLegendary 0 .
     
-    pkmn:Tapu Koko rdf:type pkmn:Pokemon ;
+    pkmn:TapuKoko rdf:type pkmn:Pokemon ;
         pkmn:hasName 'Tapu Koko'@en, 'Kapu-kokekoカプ・コケコ'@jp ;
         pkmn:hasPokedexNumber 785 ;
         pkmn:hasType1 "electric" ;
