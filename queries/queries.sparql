@@ -34,3 +34,23 @@ WHERE {
            pkmn:againstTYPE ?multiplier .
   FILTER(LANG(?pokemonName) = "en" && ?multiplier < 1)
 }
+
+
+# Find unique abilities and pokemons than have them
+SELECT ?pokemonName ?uniqueAbility
+WHERE {
+  ?pokemon rdf:type pkmn:Pokemon ;
+           pkmn:hasName ?pokemonName ;
+           pkmn:hasAbility ?ability .
+
+  OPTIONAL {
+    ?otherPokemon rdf:type pkmn:Pokemon ;
+                  pkmn:hasAbility ?ability .
+    FILTER (?otherPokemon != ?pokemon)
+  }
+
+  FILTER (!bound(?otherPokemon))
+  FILTER (lang(?pokemonName) = 'en')
+
+  BIND (?ability AS ?uniqueAbility)
+}
