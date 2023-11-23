@@ -1,10 +1,10 @@
-# Query: All legendary Grass Types
+# All legendary Grass Types
 SELECT DISTINCT ?pokemonName
 WHERE {
-?pokemon rdf:type pkmn:Pokemon ;
-         pkmn:hasName ?pokemonName;
-         pkmn:isLegendary 1.
-FILTER(LANG(?pokemonName) = "en")
+  ?pokemon rdf:type pkmn:Pokemon ;
+           pkmn:hasName ?pokemonName;
+           pkmn:isLegendary 1.
+  FILTER(LANG(?pokemonName) = "en")
   {?pokemon pkmn:hasType1 "grass"}
   UNION
   {?pokemon pkmn:hasType2 "grass"}
@@ -26,11 +26,11 @@ WHERE {
 }
 
 
-# All pokemon that resists a specific TYPE
+# All pokemon that resist a specific TYPE
 SELECT ?pokemonName
 WHERE {
-    ?pokemon rdf:type pkmn:Pokemon ;
-             pkmn:hasName ?pokemonName ;
-             pkmn:againstTYPE ?multiplier .
-    FILTER(LANG(?pokemonName) = "en" && ?multiplier < 1)
+  ?pokemon rdf:type pkmn:Pokemon ;
+           pkmn:hasName ?pokemonName ;
+           pkmn:againstTYPE ?multiplier .
+  FILTER(LANG(?pokemonName) = "en" && ?multiplier < 1)
 }
