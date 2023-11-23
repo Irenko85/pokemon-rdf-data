@@ -1,0 +1,12 @@
+#starter_inference
+pkmn:Starter rdf:type owl:Class .
+pkmn:Starter owl:equivalentClass [owl:hasValue 'Overgrow' ; owl:onProperty #pkmn:hasAbility].
+pkmn:Starter owl:equivalentClass [owl:hasValue 'Blaze' ; owl:onProperty pkmn:hasAbility].
+pkmn:Starter owl:equivalentClass [owl:hasValue 'Torrent' ; owl:onProperty pkmn:hasAbility].
+#legendary_semilegendary
+pkmn:Legendary rdf:type owl:Class.
+pkmn:Legendary owl:subClassOf pkmn:Pokemon.
+pkmn:Legendary owl:equivalentClass [owl:hasValue 1 ; owl:onProperty pkmn:isLegendary].
+pkmn:semiLegendary rdf:type owl:Class.
+pkmn:semiLegendary owl:subClassOf pkmn:Pokemon.
+pkmn:semiLegendary owl:equivalentClass [owl:intersectionOf ([owl:hasValue 600 ; owl:onProperty pkmn:hasBaseTotal] [owl:hasValue 0 ; owl:onProperty pkmn:isLegendary])].
