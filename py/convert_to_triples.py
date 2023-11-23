@@ -1,18 +1,18 @@
 import pandas as pd
 
-# Importar el csv
+# Import the csv
 dataset = pd.read_csv('../dataset/pokemon.csv', sep=',', encoding='utf-8')
 
-# Crear archivo de salida
+# Create output file
 file = open('../dataset/pokemon.ttl', 'w', encoding='utf-8')
 
 PREFIX_RDF = "@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>."
 PREFIX_PKMN = "@prefix pkmn:<http://www.ex.org/#>."
 
-# Reemplazar los nulos por 0 en percentage_male
+# Replace null values with 0 in percentage_male
 dataset['percentage_male'] = dataset['percentage_male'].fillna(0)
 
-# Recorrer el dataset
+# Iterate over the dataset
 text = PREFIX_PKMN + "\n" + PREFIX_RDF + "\n\n"
 for index, row in dataset.iterrows():
     text += f"""
@@ -36,7 +36,7 @@ for index, row in dataset.iterrows():
         pkmn:hasBaseEggSteps {row['base_egg_steps']} ;
         pkmn:hasBaseHappiness {row['base_happiness']} ;
         pkmn:hasExperienceGrowth {row['experience_growth']} ;
-        pkmn:hasClassification "{row['classfication']}" ;
+        pkmn:hasClassification "{row['classification']}" ;
         pkmn:againstBug {row['against_bug']} ;
         pkmn:againstDark {row['against_dark']} ;
         pkmn:againstDragon {row['against_dragon']} ;
@@ -70,4 +70,3 @@ for index, row in dataset.iterrows():
 
 file.write(text)
 file.close()
-
