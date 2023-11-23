@@ -1,3 +1,0 @@
-#Consultas
-#Q1
-SELECT

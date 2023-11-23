@@ -1,0 +1,13 @@
+#query thirdevofire
+SELECT DISTINCT ?pokemonName
+WHERE {
+  ?pokemon rdf:type pkmn:Pokemon ;
+           pkmn:hasName ?pokemonName;
+           pkmn:hasAbility 'Blaze';
+           pkmn:hasBaseTotal ?total.
+  FILTER(LANG(?pokemonName) = "en"
+         && ?total > 500)
+  {?pokemon pkmn:hasType1 "fire"}
+  UNION
+  {?pokemon pkmn:hasType2 "fire"}
+}
