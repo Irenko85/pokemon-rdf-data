@@ -1,9 +1,11 @@
-#starter_inference
+# Starter Inference
 pkmn:Starter rdf:type owl:Class .
 pkmn:Starter owl:equivalentClass [owl:hasValue 'Overgrow' ; owl:onProperty #pkmn:hasAbility].
 pkmn:Starter owl:equivalentClass [owl:hasValue 'Blaze' ; owl:onProperty pkmn:hasAbility].
 pkmn:Starter owl:equivalentClass [owl:hasValue 'Torrent' ; owl:onProperty pkmn:hasAbility].
-#legendary_semilegendary
+
+
+# Legendary Semi-legendary
 pkmn:Legendary rdf:type owl:Class.
 pkmn:Legendary owl:subClassOf pkmn:Pokemon.
 pkmn:Legendary owl:equivalentClass [owl:hasValue 1 ; owl:onProperty pkmn:isLegendary].
