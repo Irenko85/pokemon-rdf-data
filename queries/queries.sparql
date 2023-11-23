@@ -10,6 +10,7 @@ FILTER(LANG(?pokemonName) = "en")
   {?pokemon pkmn:hasType2 "grass"}
 }
 
+
 # All third-evolution of Fire Types starters
 SELECT DISTINCT ?pokemonName
 WHERE {
@@ -22,4 +23,14 @@ WHERE {
   {?pokemon pkmn:hasType1 "fire"}
   UNION
   {?pokemon pkmn:hasType2 "fire"}
+}
+
+
+# All pokemon that resists a specific TYPE
+SELECT ?pokemonName
+WHERE {
+    ?pokemon rdf:type pkmn:Pokemon ;
+             pkmn:hasName ?pokemonName ;
+             pkmn:againstTYPE ?multiplier .
+    FILTER(LANG(?pokemonName) = "en" && ?multiplier < 1)
 }
