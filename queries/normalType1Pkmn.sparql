@@ -9,3 +9,4 @@ WHERE {
            pkmn:hasType1 "normal" .
   FILTER(LANG(?pokemonName) = "en")
 }
+LIMIT 10;

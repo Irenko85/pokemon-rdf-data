@@ -56,7 +56,7 @@ for index, row in dataset.iterrows():
         pkmn:againstSteel {row['against_steel']} ;
         pkmn:againstWater {row['against_water']} ;
     """
-    
+
     abilities = row['abilities'].strip('][').split(', ')
     if abilities:
         text += "    pkmn:hasAbility "
@@ -65,7 +65,8 @@ for index, row in dataset.iterrows():
 
     text += f"""
         pkmn:isLegendary {row['is_legendary']} .
-        """
+    """
+
 
 file.write(text)
 file.close()
