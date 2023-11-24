@@ -1,4 +1,4 @@
-# Query for the height and weight of the selected Pokemon
+# Query for the height and weight of the selected Pokemon used in WikiData
 SELECT DISTINCT ?weight ?height ?namelabel
 WHERE {
   ?name wdt:P8345 wd:Q864;

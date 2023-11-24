@@ -1,5 +1,4 @@
 from rdflib import Graph
-import json
 
 # Dataset URL
 url = "https://raw.githubusercontent.com/Irenko85/pokemon-rdf-data/dev/dataset/ttl/pokemon.ttl"
